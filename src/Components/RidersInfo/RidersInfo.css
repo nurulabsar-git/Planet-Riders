@@ -1,0 +1,12 @@
+.first-part{
+    width: 70%;
+    height: 45vh;
+    box-shadow: 3px 3px 5px gray ;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color:lavender;
+    
+
+}
