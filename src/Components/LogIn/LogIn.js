@@ -4,6 +4,8 @@ import "firebase/auth";
 import firebaseConfig from './Firebase.Config';
 import { ThemContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
+import { useForm } from 'react-hook-form';
+import './LogIn.css';
 
 
 const LogIn = () => {
@@ -45,18 +47,24 @@ const [loggedUser, setLoggedUser] = useContext(ThemContext);
      });
 }
 
+const { register, handleSubmit, watch, errors } = useForm();
 
     return (
-        <div className="">
-        <form>
-        <label htmlFor="">Pick From</label>
-        <input name="example" ref={register} placeholder="Mirpur-1" style={{width: '90%'}}/> 
-        <label htmlFor="">Pick To</label>
-        <input name="exampleRequired" ref={register({ required: true })} placeholder="Uttora" style={{width: '90%'}}/>
+        <div className="login-part">
+    <section>
+    <form>
+        {/* <label htmlFor="">Pick From</label> */}
+        <input name="example" ref={register} placeholder="Please Enter Your Name"/> <br/>
+        {/* <label htmlFor="">Pick To</label> */}
+        <input name="exampleRequired" ref={register({ required: true })} placeholder="Please Enter Your Email"/>
         {errors.exampleRequired && <span>This field is required</span>} <br/>
-      
-        </form>
-             <button onClick={handleGoogleSignIn}>Sign in</button>
+        
+    </form>
+
+   <button onClick={handleGoogleSignIn}>Sign in</button>
+    </section>
+        
+             
         </div>
     );
 };
