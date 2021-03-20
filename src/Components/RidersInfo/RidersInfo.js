@@ -28,14 +28,9 @@ const RidersInfo = (props) => {
     const { register, handleSubmit, watch, errors } = useForm();
     
     return (
-        <div style={{display: 'flex', justifyContent: 'space-between', margin: '10px'}}>
-          <section >
-
-              
+<div style={{display: 'flex', justifyContent: 'space-between', margin: '10px'}}>
+<section>         
   <div className="first-part">
-
-
-
  <form>
         <label htmlFor="">Pick From</label>
         <input name="example" ref={register} placeholder="Mirpur-1" style={{width: '90%'}}/> 
@@ -45,27 +40,11 @@ const RidersInfo = (props) => {
       
     </form> <br/>
     <button onClick = {() =>handleRidersInfo(riderId)} style={{width: '90%'}}>Search</button>
-
-
-  
-
-
-  <div>
-
-  </div>
-    {/* {handleRidersInfo ==='true' ? 
-       tickets.map(tk => <div>
-
-           <p>{tk.name}</p>
-       </div>) 
-     : ''
-} */}
-
-    </div>
-  </section>
+ </div>
+</section>
  <section>
               <div>
-              <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Dhaka+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=705d35f602baf995744298787ac1fea5b4d43106'></script>
+              <iframe className="map-style" width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Dhaka+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=705d35f602baf995744298787ac1fea5b4d43106'></script>
               </div>
 </section>
 </div>
@@ -80,6 +59,14 @@ const RidersInfo = (props) => {
 // {
 //     tickets.map(pd => <Cat pdA = {pd} handleRider={handleRidersInfo}></Cat>)  
 //   }
+
+{/* {handleRidersInfo ==='true' ? 
+       tickets.map(tk => <div>
+
+           <p>{tk.name}</p>
+       </div>) 
+     : ''
+} */}
     
 
 export default RidersInfo;

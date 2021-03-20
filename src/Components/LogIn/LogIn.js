@@ -126,20 +126,20 @@ const updateUserName = name =>{
     <label htmlFor="newUser">New User Sign up</label>
 
     <form onSubmit={handleSubmit}>
-    {newUser && <input  onBlur={handleBlur} name= "name" type="text" placeholder="your name"/>
-   } <br/>
+    {newUser && <input style={{width: '70%', borderRadius: '5px'}}  onBlur={handleBlur} name= "name" type="text" placeholder="your name"/> 
+   } <br/> <br/>
      
-    <input onBlur={handleBlur} type="text" name="email" placeholder="Please Enter Your Email Address" required /> <br/>
+    <input onBlur={handleBlur} type="text" name="email" placeholder="Please Enter Your Email Address" required style={{width: '70%', borderRadius: '5px'}} /> <br/> <br/>
    
-    <input onBlur={handleBlur} type="password" name="password" placeholder="Please Enter Your Password" required/> <br/>
+    <input onBlur={handleBlur} type="password" name="password" placeholder="Please Enter Your Password" style={{width: '70%', borderRadius: '5px'}} required/> <br/> <br/>
     
     <input type="submit" value={newUser ? 'Sign up' : 'Sign in'}/>
     </form>
 
 
-   <h6>OR</h6>
-   <button onClick={googleSignIn}><i class="fa fa-google" aria-hidden="true"></i>  Sign in with google</button> <br/>
-   <button onClick={fbSignIn}><i class="fa fa-facebook-square" aria-hidden="true"></i> Sign in with facebook</button> <br/>
+   <h6 className="or-style">OR</h6>
+   <button onClick={googleSignIn} className="button-style"> <i class="fa fa-google" aria-hidden="true"></i>  Sign in with google</button> <br/>
+   <button onClick={fbSignIn} className="button-style">  <i class="fa fa-facebook-square" aria-hidden="true"></i> Sign in with facebook</button> <br/>
 
 
 

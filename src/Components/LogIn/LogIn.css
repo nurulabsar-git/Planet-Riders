@@ -11,3 +11,14 @@
     
 
 }
+
+.button-style{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+/* .or-style{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+} */
