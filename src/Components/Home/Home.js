@@ -11,7 +11,7 @@ const Home = () => {
     }, [])
     return (
        <div>
-           <h1>This is home page</h1>
+           
             <div className="container">
             {
                 riders.map(rider => <HomePageDetails riderAttribute = {rider}></HomePageDetails>)

@@ -1,9 +1,21 @@
 .header-part{
-    margin: 8px;
     text-align: center;
-    justify-content: space-around;
 }
 
-.home{
+ .link{
     text-decoration: none;
+    margin-right: 5px;
+    padding: 4px;
+    color: white;
+}
+
+.header-part nav {
+    margin-top: 8px;
+    background-color: mediumaquamarine;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+nav:hover{
+    background-color: green;
 }

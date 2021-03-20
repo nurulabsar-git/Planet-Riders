@@ -4,8 +4,8 @@ import './HomePageDetails.css';
 
 
 const HomePageDetails = (props) => {
-    console.log(props);
-    const {url, name, id} = props.riderAttribute;
+    // console.log(props);
+    const {url, name, tk, id} = props.riderAttribute;
 
    const history = useHistory();
     const handleOnClickFunction = (hello) =>{
@@ -16,8 +16,11 @@ const HomePageDetails = (props) => {
 
     return (
         <div onClick={()=>{handleOnClickFunction(id)}} className="home-page-details">
-        <img style={{width: '60%'}} src={url} alt=""/>
-        <h1>{name}</h1>
+        <img class="card-img-top" style={{width: '60%'}} src={url} alt=""/>
+         <div class="card-body">
+         <h1>{name}</h1>
+        <p>$ {tk}</p>
+         </div>
         
         </div>
     );

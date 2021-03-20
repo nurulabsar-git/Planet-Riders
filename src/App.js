@@ -32,6 +32,10 @@ function App () {
             <RidersInfo></RidersInfo>
           </PrivateRoute>
 
+          <Route path ="/details/:detailsId">
+
+          </Route>
+
           <Route path="/login">
             <LogIn></LogIn>
           </Route>
