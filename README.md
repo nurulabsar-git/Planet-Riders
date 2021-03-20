@@ -2,10 +2,8 @@
 
 ### Code Splitting
 
-This section has moved here: [https://github.com/Porgramming-Hero-web-course/react-auth-nurulabsar-git](https://github.com/Porgramming-Hero-web-course/react-auth-nurulabsar-git)
+Github Site Link : [https://github.com/Porgramming-Hero-web-course/react-auth-nurulabsar-git](https://github.com/Porgramming-Hero-web-course/react-auth-nurulabsar-git)
 
 ### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-
+Live Site Link: [https://assignment-nine-ph.web.app](https://assignment-nine-ph.web.app)
