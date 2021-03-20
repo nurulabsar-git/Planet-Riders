@@ -1,10 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { ThemContext } from '../../App';
-
 import { initializeLoginFramework, createUserWithEmailAndPassword, handleFacebookSignIn, handleGoogleSignIn, signInWithEmailAndPassword } from './LogInManager';
 import './LogIn.css';
-import firebase from "firebase/app";
-import "firebase/auth";
 import { useHistory, useLocation } from 'react-router';
 
 
@@ -78,25 +75,6 @@ hello.preventDefault();
 }
 
 
-
-const updateUserName = name =>{
-
-    const user = firebase.auth().currentUser;
- 
-     user.updateProfile({
-       displayName: name
-     }).then( function () {
-       console.log('user info updated successfully');
-     })
-     .catch(function(error) {
-       console.log(error);
-     });
- 
-   }
-
-
-   
-
    const googleSignIn = () =>{
     handleGoogleSignIn()
     .then(result =>{
@@ -107,8 +85,7 @@ const updateUserName = name =>{
 
 
    const fbSignIn = () => {
-
-    handleFacebookSignIn()
+   handleFacebookSignIn()
     .then(result => {
       handleResponse(result, true);
     })  
