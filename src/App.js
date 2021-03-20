@@ -35,6 +35,11 @@ function App () {
           <Route path="/rider/:riderId">
             <RidersInfo></RidersInfo>
           </Route>
+          <Route path ="/details/:detailsId">
+             <RiderDetails></RiderDetails>
+          </Route>
+
+
           <PrivateRoute path="/destination">
             <Destination></Destination>
           </PrivateRoute>
@@ -47,22 +52,14 @@ function App () {
          <Route path="/detection">
            <Home></Home>
          </Route>
-
-          <Route path ="/details/:detailsId">
-             <RiderDetails></RiderDetails>
-          </Route>
-
-          <Route path="/login">
+         <Route path="/login">
             <LogIn></LogIn>
           </Route>
+
 
           <Route exact path= "/">
             <Home></Home>
           </Route>
-
-
-
-         
           <Route path="*">
           <NotFound></NotFound>
           </Route>

@@ -5,16 +5,11 @@ import './RidersInfo.css';
 import FakeData from '../FakeData/MOCK_DATA.json';
 import Cat from '../Cat/Cat';
 
-const RidersInfo = (props) => {
-    console.log(props);
-   
-    const {riderId} = useParams();
+const RidersInfo = () => {
     
-    // const [tickets, setTickets] = useState([]);
-    // useEffect(() => {
-       
-    //    setTickets(FakeData);
-    // }, [])
+     const {riderId} = useParams();
+      // console.log("Test", riderId);
+    const { register, handleSubmit, watch, errors } = useForm();
 
     const anotherHistory = useHistory();
     const handleRidersInfo = (parameter) =>{
@@ -24,8 +19,6 @@ const RidersInfo = (props) => {
     }
 
     
-    // console.log("Test", riderId);
-    const { register, handleSubmit, watch, errors } = useForm();
     
     return (
 <div style={{display: 'flex', justifyContent: 'space-between', margin: '10px'}}>
